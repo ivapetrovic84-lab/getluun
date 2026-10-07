@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUUN — the new name of LUNA</title>
+  <meta name="description" content="LUNA is now LUUN. The name has changed. The standard has not been lowered.">
+  <meta name="theme-color" content="#0E1116">
+  <link rel="canonical" href="https://getluun.com/">
+  <meta property="og:title" content="LUUN — the new name of LUNA">
+  <meta property="og:description" content="LUNA is now LUUN. One name. A clearer standard.">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      --bg: #0E1116;
+      --surface: #171C24;
+      --text: #F4F1EA;
+      --muted: #A8A399;
+      --line: #2A3140;
+      --accent: #E7E1D5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.5;
+      letter-spacing: -0.011em;
+    }
+    a { color: inherit; }
+    .skip { position: absolute; left: 16px; top: -40px; background: var(--accent); color: var(--bg); padding: 8px 12px; z-index: 10; }
+    .skip:focus { top: 12px; }
+    .announce { background: var(--surface); color: var(--accent); text-align: center; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; padding: 10px 16px; border-bottom: 1px solid var(--line); }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 20px 28px; border-bottom: 1px solid var(--line); }
+    .mark { font-weight: 560; letter-spacing: 0.22em; font-size: 14px; text-decoration: none; }
+    nav { display: flex; gap: 22px; align-items: center; }
+    nav a { color: var(--muted); text-decoration: none; font-size: 14px; }
+    nav a:hover, nav a:focus { color: var(--text); }
+    .quiet { border: 1px solid var(--line); color: var(--text) !important; padding: 8px 14px; text-decoration: none; font-size: 14px; }
+    .quiet:focus, .mark:focus, a:focus { outline: 1px solid var(--accent); outline-offset: 3px; }
+    main { min-height: calc(100vh - 148px); display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; align-items: end; padding: 72px 28px 56px; max-width: 1180px; margin: 0 auto; }
+    .kicker { color: var(--muted); font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 20px; }
+    h1 { font-size: clamp(56px, 9vw, 92px); line-height: 0.88; letter-spacing: -0.045em; font-weight: 500; margin: 0 0 24px; }
+    .lede { max-width: 36rem; font-size: 18px; margin: 0 0 32px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .primary { background: var(--accent); color: #0E1116; text-decoration: none; padding: 12px 18px; font-size: 15px; }
+    .ghost { color: var(--muted); text-decoration: none; padding: 12px 4px; font-size: 15px; }
+    .moon-wrap { justify-self: end; width: min(340px, 80%); aspect-ratio: 1; border: 1px solid var(--line); background: radial-gradient(circle at 42% 42%, #F7F4EE 0 46%, transparent 47%), radial-gradient(circle at 58% 40%, #0E1116 0 38%, transparent 39%), var(--surface); position: relative; }
+    .moon-wrap span { position: absolute; left: 16px; bottom: 14px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+    footer { border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; padding: 18px 28px 28px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 800px) {
+      header { padding: 16px; }
+      nav a:not(.quiet) { display: none; }
+      main { grid-template-columns: 1fr; padding: 48px 16px 40px; align-items: start; min-height: auto; }
+      .moon-wrap { justify-self: start; width: 220px; }
+      footer { flex-direction: column; padding: 16px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"LUUN","alternateName":"LUNA","url":"https://getluun.com/"}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="announce" role="status">LUNA is now LUUN</div>
+  <header>
+    <a class="mark" href="/" aria-label="LUUN, home">LUUN</a>
+    <nav aria-label="Primary">
+      <a href="#name">The name</a>
+      <a class="quiet" href="#name">Read the change</a>
+    </nav>
+  </header>
+  <main id="content">
+    <div>
+      <p class="kicker">Formerly LUNA</p>
+      <h1>LUUN</h1>
+      <p class="lede" id="name">The new name of LUNA. Spoken as one syllable, loon. The old name stays only here, as the record of the change.</p>
+      <div class="actions">
+        <a class="primary" href="mailto:hello@getluun.com">hello@getluun.com</a>
+      </div>
+    </div>
+    <div class="moon-wrap" role="img" aria-label="A pale crescent on a dark field. No product is shown.">
+      <span>Night, reduced</span>
+    </div>
+  </main>
+  <footer>
+    <span>LUUN. Formerly LUNA.</span>
+    <span>getluun.com</span>
+  </footer>
+</body>
+</html>
